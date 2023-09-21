@@ -15,8 +15,10 @@ class RunTests(BaseRunTests):
         pass
 
     def _initialize_options_true_probs_of_converting(self):
-        # define here terms from 0.01 ~ 0.05
-        pass
+        # define here terms from 0.005 ~ 0.025
+        lower_bound = 0.005
+        upper_bound = 0.025
+        return np.random.uniform(lower_bound, upper_bound, self.number_of_options)
 
     def run_tests(self):
         pass
